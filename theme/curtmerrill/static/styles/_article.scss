@@ -1,0 +1,39 @@
+.article-title {
+    margin-bottom: .15rem;
+    line-height: 1.1;
+}
+.article-meta,
+.page-meta {
+    font-size: .875rem;
+    margin: .15rem 0;
+    color: $gray;
+    font-family: $sans;
+}
+
+article > footer,
+main > footer {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footnote {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: .875rem;
+    color: $gray;
+    font-family: $sans;
+}
+
+.tag {
+    font-size: .875em;
+    padding: .2em .75em .2em .55em;
+
+    font-family: $sans;
+    background-color: mix($white, $blue, 85);
+    border-radius: .1em;
+    text-decoration: none;
+
+    &:hover {
+        background-color: mix($white, $sienna, 85);
+    }
+}

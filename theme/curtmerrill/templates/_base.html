@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="{% block html_lang %}{{ DEFAULT_LANG }}{% endblock html_lang %}">
+<head>
+    {% block head %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' *.typekit.net">
+
+    <meta property="og:url" content="{{ url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ SITENAME }}{% endif %}">
+    <meta property="og:image" content="{% if og_img %}{{ og_img }}{% else %}{% endif %}">
+    <meta property="og:description" content="{% if og_desc %}{{ og_desc }}{% else %}{{ summary }}{% endif %}">
+    <meta property="og:site_name" content="{{ SITENAME }}">
+    <meta property="og:locale" content="{{ lang }}">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="@cmerrill" />
+    <meta name="twitter:dnt" content="on">
+    <meta name="pinterest" content="nopin">
+
+    <link rel="stylesheet" href="https://use.typekit.net/zll4pfx.css">
+
+    {% assets filters="sass", output="styles/main.css", "styles/main.scss" %}
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
+    {% endassets %}
+
+    <link rel="me" href="https://xoxo.zone/@cmerrill">
+    <link rel="alternate" href="{{ SITEURL }}/feeds/all.atom.xml">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ SITEURL }}/theme/visuals/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ SITEURL }}/theme/visuals/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ SITEURL }}/theme/visuals/favicon-16x16.png">
+    <link rel="manifest" href="{{ SITEURL }}/theme/visuals/site.webmanifest">
+    <link rel="mask-icon" href="{{ SITEURL }}/theme/visuals/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="{{ SITEURL }}/theme/visuals/favicon.ico">
+    <meta name="msapplication-TileColor" content="#f8f8ff">
+    <meta name="msapplication-config" content="{{ SITEURL }}/theme/visuals/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    {% endblock head %}
+</head>
+
+<body>
+{% include "_header.html" %}
+
+{% block main %}{% endblock main %}
+
+
+{% include "_footer.html" %}
+{# TODO #}
+{# <script src="{{ SITEURL }}/{{ ASSET_URL }}"></script> #}
+</body>
+
+<script>
+  !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+  arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+  d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+  insertBefore(d,q)}(window,document,'script','_gs');
+
+  _gs('set', 'anonymizeIP', true);
+  _gs('GSN-508622-N');
+</script>
+</html>

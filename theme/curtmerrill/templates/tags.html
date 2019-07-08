@@ -1,0 +1,23 @@
+{% extends "_base.html" %}
+
+{% block title %}Archives by tag — {{ super() }}{% endblock title %}
+
+{% block main %}
+
+<main class="container">
+    <h1>Tags</h1>
+
+    <ul class="post-list">
+    {% for t, articles in tags|sort %}
+        <li>
+            <a class="post-link" href="{{ SITEURL }}/{{ t.url }}">{{ t.name }}</a>
+            <span class="post-meta">{{ articles|count }} {% if articles|count == 1 %}post{%else %}posts{% endif %}</span>
+        </li>
+    {% endfor %}
+    </ul>
+
+</main>
+
+
+{% endblock main %}
+

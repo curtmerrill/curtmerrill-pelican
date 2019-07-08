@@ -1,0 +1,24 @@
+{% extends "_base.html" %}
+
+{% block title %}{{ article.title }} — {{ super() }}{% endblock title %}
+
+{% block main %}
+
+<article class="container">
+    <header>
+        <h1 class="article-title">{{ article.title }}</h1>
+        <p class="article-meta">{{ article.date|strftime('%d %B %Y') }}</p>
+    </header>
+
+    {{ article.content }}
+
+    <footer>
+        <p class="article-meta">
+        {% for t in article.tags %}
+        <a class="tag" href="{{ SITEURL }}/{{ t.url }}">{{ t.name }}</a>
+        {% endfor %}
+        </p>
+    </footer>
+</article>
+
+{% endblock main %}

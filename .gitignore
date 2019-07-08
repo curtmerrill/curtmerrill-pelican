@@ -1,0 +1,6 @@
+__pycache__
+.DS_Store
+content/drafts
+output
+*.py[co]
+pelican-plugins

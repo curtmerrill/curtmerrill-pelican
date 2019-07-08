@@ -1,0 +1,23 @@
+{% extends "_base.html" %}
+
+{% block title %}{{ period[0] }} archives — {{ super() }}{% endblock title %}
+
+{% block main %}
+
+<main class="container">
+    <h1>{{ period[0] }} archives</h1>
+
+    <ul class="post-list">
+    {% for a in articles %}
+        <li>
+            <a class="post-link" href="{{ SITEURL }}/{{ a.url }}">{{ a.title }}</a>
+            <span class="post-meta">{{ a.date|strftime('%b %d %Y') }}</span>
+        </li>
+    {% endfor %}
+    </ul>
+
+</main>
+
+
+{% endblock main %}
+

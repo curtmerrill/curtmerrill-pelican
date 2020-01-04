@@ -1,21 +1,21 @@
 Title: /now
 
-<p class="page-meta">as of July 5, 2019</p>
+<p class="page-meta">as of January 4, 2020</p>
 
 ## Doing
 
   * Developing web projects at CNN.com
   * Trying to be a good dad
-  * Saving up for a [Switch](https://amzn.to/2W2xZt1)
-  * Working on this web site (occasionally)
+  * Working on this web site (rarely)
 
 
 ## Using
 
-☕️ Blanchard’s Midnight Oil  
+☕️ Blanchard’s Holiday Blend    
 🖋 TWSBI Eco with Monteverde Copper Noir  
-🖋 Lamy Safari with Diamine Aurora Borealis  
+🖋 TWSBI Diamond 580 with Iroshizuku Tsuki-yo  
 🖋 TWSBI Go with Diamine Earl Grey
+🖋 Platinum Century 3776 with Sailor 964
 
 
 

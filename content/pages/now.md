@@ -14,7 +14,7 @@ Title: /now
 ☕️ Blanchard’s Holiday Blend    
 🖋 TWSBI Eco with Monteverde Copper Noir  
 🖋 TWSBI Diamond 580 with Iroshizuku Tsuki-yo  
-🖋 TWSBI Go with Diamine Earl Grey
+🖋 TWSBI Go with Diamine Earl Grey  
 🖋 Platinum Century 3776 with Sailor 964
 
 
